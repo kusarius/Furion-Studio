@@ -7,7 +7,7 @@ using System.Text;
 
 namespace Furion_Studio {
     public class Sample {
-        [DllImport("user32.dll")]
+        [DllImport("kernel32.dll")]
         private static extern void Beep(int freq, int dur);
 
         public int Frequency { get; set; }

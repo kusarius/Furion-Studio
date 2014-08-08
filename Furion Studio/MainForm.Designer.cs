@@ -121,6 +121,7 @@
             this.pauseSoundButton.TabIndex = 7;
             this.buttonsToolTip.SetToolTip(this.pauseSoundButton, "Остановить мелодию");
             this.pauseSoundButton.UseVisualStyleBackColor = true;
+            this.pauseSoundButton.Click += new System.EventHandler(this.pauseSoundButton_Click);
             // 
             // playSoundButton
             // 
@@ -136,6 +137,7 @@
             this.playSoundButton.TabIndex = 6;
             this.buttonsToolTip.SetToolTip(this.playSoundButton, "Играть мелодию");
             this.playSoundButton.UseVisualStyleBackColor = true;
+            this.playSoundButton.Click += new System.EventHandler(this.playSoundButton_Click);
             // 
             // openSoundButton
             // 
@@ -181,6 +183,7 @@
             this.editSampleButton.TabIndex = 2;
             this.buttonsToolTip.SetToolTip(this.editSampleButton, "Редактировать сэмпл");
             this.editSampleButton.UseVisualStyleBackColor = true;
+            this.editSampleButton.Click += new System.EventHandler(this.editSampleButton_Click);
             // 
             // removeSampleButton
             // 
@@ -196,6 +199,7 @@
             this.removeSampleButton.TabIndex = 1;
             this.buttonsToolTip.SetToolTip(this.removeSampleButton, "Удалить сэмпл");
             this.removeSampleButton.UseVisualStyleBackColor = true;
+            this.removeSampleButton.Click += new System.EventHandler(this.removeSampleButton_Click);
             // 
             // addSampleButton
             // 
@@ -211,6 +215,7 @@
             this.addSampleButton.TabIndex = 0;
             this.buttonsToolTip.SetToolTip(this.addSampleButton, "Добавить сэмпл");
             this.addSampleButton.UseVisualStyleBackColor = true;
+            this.addSampleButton.Click += new System.EventHandler(this.addSampleButton_Click);
             // 
             // MainForm
             // 
