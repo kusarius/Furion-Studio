@@ -27,8 +27,11 @@
             this.samplesGridView = new System.Windows.Forms.DataGridView();
             this.samplesTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.toolbarPanel = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.separator1 = new System.Windows.Forms.Label();
             this.buttonsToolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.pauseSoundButton = new System.Windows.Forms.Button();
+            this.playSoundButton = new System.Windows.Forms.Button();
             this.openSoundButton = new System.Windows.Forms.Button();
             this.saveSoundButton = new System.Windows.Forms.Button();
             this.editSampleButton = new System.Windows.Forms.Button();
@@ -73,6 +76,9 @@
             // 
             // toolbarPanel
             // 
+            this.toolbarPanel.Controls.Add(this.pauseSoundButton);
+            this.toolbarPanel.Controls.Add(this.playSoundButton);
+            this.toolbarPanel.Controls.Add(this.label1);
             this.toolbarPanel.Controls.Add(this.openSoundButton);
             this.toolbarPanel.Controls.Add(this.separator1);
             this.toolbarPanel.Controls.Add(this.saveSoundButton);
@@ -85,6 +91,14 @@
             this.toolbarPanel.Size = new System.Drawing.Size(30, 271);
             this.toolbarPanel.TabIndex = 2;
             // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.label1.Location = new System.Drawing.Point(0, 160);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(30, 1);
+            this.label1.TabIndex = 5;
+            // 
             // separator1
             // 
             this.separator1.BackColor = System.Drawing.SystemColors.ControlDark;
@@ -92,6 +106,36 @@
             this.separator1.Name = "separator1";
             this.separator1.Size = new System.Drawing.Size(30, 1);
             this.separator1.TabIndex = 3;
+            // 
+            // pauseSoundButton
+            // 
+            this.pauseSoundButton.BackgroundImage = global::Furion_Studio.Properties.Resources.pause__1_;
+            this.pauseSoundButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pauseSoundButton.FlatAppearance.BorderSize = 0;
+            this.pauseSoundButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(215)))), ((int)(((byte)(215)))));
+            this.pauseSoundButton.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlLight;
+            this.pauseSoundButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pauseSoundButton.Location = new System.Drawing.Point(4, 196);
+            this.pauseSoundButton.Name = "pauseSoundButton";
+            this.pauseSoundButton.Size = new System.Drawing.Size(22, 22);
+            this.pauseSoundButton.TabIndex = 7;
+            this.buttonsToolTip.SetToolTip(this.pauseSoundButton, "Остановить мелодию");
+            this.pauseSoundButton.UseVisualStyleBackColor = true;
+            // 
+            // playSoundButton
+            // 
+            this.playSoundButton.BackgroundImage = global::Furion_Studio.Properties.Resources.dc7epb8gi;
+            this.playSoundButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.playSoundButton.FlatAppearance.BorderSize = 0;
+            this.playSoundButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(215)))), ((int)(((byte)(215)))));
+            this.playSoundButton.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlLight;
+            this.playSoundButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.playSoundButton.Location = new System.Drawing.Point(4, 168);
+            this.playSoundButton.Name = "playSoundButton";
+            this.playSoundButton.Size = new System.Drawing.Size(22, 22);
+            this.playSoundButton.TabIndex = 6;
+            this.buttonsToolTip.SetToolTip(this.playSoundButton, "Играть мелодию");
+            this.playSoundButton.UseVisualStyleBackColor = true;
             // 
             // openSoundButton
             // 
@@ -198,6 +242,9 @@
         private System.Windows.Forms.Button saveSoundButton;
         private System.Windows.Forms.ToolTip buttonsToolTip;
         private System.Windows.Forms.Button openSoundButton;
+        private System.Windows.Forms.Button playSoundButton;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button pauseSoundButton;
     }
 }
 
